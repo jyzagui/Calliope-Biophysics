@@ -1,56 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Calliope Biophysics</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <h1>Calliope Biophysics</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Calliope Biophysics</a>
+          <img src="images/calliope hummingbird potential logo.png" alt="CB Logo" width="30" height="24">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Our Science
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">All Publications</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Project #1</a></li>
+                  <li><a class="dropdown-item" href="#">Project #2</a></li>
+                  <li><a class="dropdown-item" href="#">Project #3</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
             </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home">
-            <h2>Welcome to Calliope Biophysics</h2>
-            <p>Explore our cutting-edge research projects in biophysics.</p>
-            <a href="#portfolio" class="cta-btn">Explore Projects</a>
-        </section>
-
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Insert your about me content here.</p>
-        </section>
-
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>Insert your portfolio content here.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Calliope Biophysics. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+          </div>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="images/calliope hummingbird potential logo.png" class="d-block mx-lg-auto img-fluid" alt="Calliope Biophysics Logo" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Mission Statement</h1>
+            <p class="lead">Mission statement or research objectives. We can place a logo or carousel picture of different projects .</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Our Science</button>
+              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Contact</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Row to display featured science projects -->
+      <div class="row">
+        <div class="col-sm-4 mb-3 mb-sm-0">
+            <div class="card text-bg-dark">
+                <img src="images/michael-dziedzic-gEN5Btvf2Eg-unsplash.jpg" class="card-img" alt="Project #1"> <!--Will include link to Our Science page directly to corresponding project-->
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">We can place images with links to a second page that provides more indepth view of the project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-bg-dark">
+                <img src="images/daniels-joffe--SmCKTIcH5E-unsplash.jpg" class="card-img" alt="Project #2"> <!--Will include link to Our Science page directly to corresponding project-->
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title #2</h5>
+                  <p class="card-text">We can place images with links to a second page that provides more indepth view of the project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4">
+            <div class="card text-bg-dark">
+                <img src="images/michael-dziedzic-dSyhpTGhNHg-unsplash.jpg" class="card-img" alt="Project #2"> <!--Will include link to Our Science page directly to corresponding project-->
+                <div class="card-img-overlay">
+                  <h5 class="card-title">Card title #3</h5>
+                  <p class="card-text">We can place images with links to a second page that provides more indepth view of the project.</p>
+                </div>
+            </div>
+          </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+  <footer class="footer mt-auto py-3 bg-body-tertiary">
+    <div class="container">
+      <span class="text-body-secondary">© 2024 Calliope Biophysics, LLC.</span>
+    </div>
+  </footer>
 </html>
