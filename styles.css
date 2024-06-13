@@ -1,0 +1,39 @@
+.navbar {
+    margin: 0 auto;
+}
+.container-fluid {
+    text-align: center;
+}
+#head-portrait {
+   border-radius: 15%; 
+}
+.navbar-nav .nav-link:hover {
+    color: rgb(255, 217, 0); /* Change text color to yellow on hover */
+    text-decoration: underline; /* Underline text on hover */
+    font-weight: bold; /* Make text bold on hover */
+  }
+.navbar-brand:hover {
+    color: rgb(255, 217, 0); /* Change text color to yellow on hover */
+}  
+.bg-main {
+    background-image: url('images/hero_equipment.jpg'); /* background image*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+  } 
+  .rounded-corner-box {
+    background-color: rgba(252, 252, 252, 0.87);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  } 
+
