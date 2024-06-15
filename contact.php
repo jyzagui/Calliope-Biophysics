@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Set your email address where you want to receive emails
+    // email address the message is being sent to
     $to = "info@calliopebiophysics.com";
 
     // Set the email subject
