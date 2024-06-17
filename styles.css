@@ -36,4 +36,19 @@
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   } 
-
+  ul.no-bullets {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
+  p.address-block {
+    margin: 0px 0px 0px 0px;
+  }
+  .contact-hero {
+    background-image: url('images/hero_equipment.jpg'); /* background image*/
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
